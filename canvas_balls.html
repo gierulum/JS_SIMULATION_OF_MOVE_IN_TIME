@@ -1,0 +1,160 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Canvas Resize </title>
+        <style type="text/css">
+body {
+    overflow: hidden;    
+}
+
+canvas {
+    left: 0;
+    position: absolute;
+    top: 0;
+    padding-left: 200px;
+}
+
+
+
+
+#runfile {
+position: fixed;
+
+height: 50px;
+padding-top:6px;
+width: 200px;
+text-align: center;
+margin-top: 160px;
+
+}
+
+#OpenFile {
+border-radius: 10px;
+height: 40px;
+width: 200px;
+background-color: #395248;
+font-family:  "Arial";
+font-size: 20px;
+color: #ffffff;
+}
+
+p {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    left: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px 30px;
+    position: absolute;
+    top: 0;
+}
+
+#czas {
+margin-top:10px;
+position:relative;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-bottom:10px;
+background-color: #ff9702;
+}
+
+
+#timeblock{
+position: absolute;
+height: 160px;
+text-align: center;
+width: 200px;
+padding-top:15px;
+padding-left:10px;
+padding-right:10px;
+background-color:#ffffff;
+display: inline-block;
+}
+
+#time {
+color: #ffffff;
+font-family:  "Arial";
+background-color: #ffffff;
+font-size: 18px;
+letter-spacing: 10px;
+position: relative;
+height: 40px;
+width: 100%;
+margin: 0px;
+padding: 0px;
+}
+        
+#TimeData {
+background-color: #ffffff;
+height: 60px;
+width: 100%;
+color: #3b5c78;
+letter-spacing: 4px;
+padding-top:10px;
+padding-bottom: 10px;
+font-weight: 200;
+font-size: 60px;
+font-family:  "Verdana";
+}
+    
+#statsrows {
+padding-top: 200px;
+color: #3b4547;
+font-family:  "Arial";
+
+}    
+    
+.statstd {
+padding-left: 10px;
+padding-right: 10px;
+padding-top:2px;
+padding-bottom:2px;
+font-family:  "Arial";
+font-size: 20px;
+font-weight: 500;
+
+}
+    
+    </style>    
+    </head>
+<body>
+
+
+
+   
+<div id="timeblock">
+<div id="time"></div>
+<div id="TimeData"></div>
+<div id="dshtml"></div>
+<div id="tablestats"> 
+<table id="statsrows" border=0>
+
+</table>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<canvas id="canvascircle"></canvas>
+<canvas id="areaballs"></canvas>
+
+<script src="canvas_balls.js"></script>
+
+<div id="runfile">
+<button id="OpenFile" onclick="RunFile()">Run Script</button>
+</div>
+
+</body>
+</html>
